@@ -1,0 +1,193 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+body{
+    text-align: center;
+
+}
+.happy-holi{
+    animation: pulse 1s infinite;
+}
+.ranggoli{
+    animation: pulse 1s infinite;
+}
+.left-slider{
+    position: relative;
+    top: -3300px;
+z-index: -1;
+}
+.right-slider{
+    position: relative;
+    top: -1300px;
+   float: right;
+  z-index: -1;
+}
+.name-show{
+    font-family: sans-serif;
+ 
+font-weight: 900;
+    font-size: 40px;
+    animation: rotaion 1s infinite;
+ -webkit-text-stroke: 1px black;
+    background-color: rgb(255, 23, 23);
+    background-size: cover ;
+    background-position: text;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+}
+input{
+
+    width: 70%;
+  z-index: 0;
+ position: absolute;
+ top: 670px;
+font-size: large;
+right: 80px;
+ padding: 13px;
+ background-color: yellow;
+ border-radius: 10px;
+ animation: pulse 1s infinite;
+
+}
+#goButton{
+    background-color: red;
+    color: white;
+    border: 2px black solid;
+    font-weight: bold;
+ 
+    position: absolute;
+   right: 3px;
+   top: 670px;
+   font-size: 18px;
+   padding: 12px;
+   border-radius: 10px;
+   animation: pulse 1s infinite;
+}
+.footerbtn{
+    width: 70%;
+    border: 2px black solid;
+    align-items: center;
+   font-size: 22px;
+    text-align: center;
+    color: rgb(38, 0, 255);
+    background-color: rgb(8, 223, 8);
+    padding: 5px 20px;
+    position: absolute;
+    right: 40px;
+    top: 630px;
+border-radius: 10px;
+text-decoration: none;
+animation: rotaion 2s infinite;
+   z-index: 3;
+   display: none;
+}
+.footerbtn img{
+    animation: rotaion 2s infinite;
+}
+#bucket-text{
+position: relative;
+top: 190px;
+z-index: 9;
+text-align: center;
+
+}
+#photo{
+    position: absolute;
+    z-index: 3;
+    top: 0px;
+}
+
+#bucket{
+    
+    position: absolute;
+    top: 260px;
+    right: 100px;
+
+    z-index: 6;
+   animation: rotaion 2s infinite;
+}
+.photoAnimation1{
+animation: photoAnimation 2s; 
+}
+    
+.wishing-text{
+    font-size: 14px;
+    background-color: pink;
+text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.j1{
+    background-color: aqua;
+    width: 80%;
+    margin-left: 40px;
+    margin-top: 10px;
+border-radius: 90px;
+}
+.j2{
+    background-color: aqua;
+    width: 80%;
+    margin-left: 40px;
+    margin-top: 10px;
+    border-radius: 90px;
+}
+.j3{
+    background-color: aqua;
+    width: 80%;
+    margin-left: 40px;
+    margin-top: 10px;
+    border-radius: 90px;
+}
+.j4{
+    background-color: aqua;
+    width: 80%;
+    margin-left: 40px;
+    margin-top: 10px;
+border-radius: 90px;
+}
+
+
+@keyframes photoAnimation {
+0%{
+    transform: rotateY(0);
+}
+100%{
+    transform: rotateY(90deg);
+}
+    
+}
+
+@keyframes rotaion {
+    0%{
+        transform: rotate(10deg);
+    }
+    50%{
+        transform: rotate(-10deg);
+    }
+    100%{
+        transform: rotate(10deg);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1)
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.07,1.07,1.07);
+        transform: scale3d(1.07,1.07,1.07)
+    }
+
+    to {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1)
+    }
+}
+
+
