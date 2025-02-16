@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<audio id="audio">
+  <source src="happy holi song background coding song.mp3" type="audio/mp3">
+</audio>
+<div id="bucket-text">
+  <h2>👇यहाँ टच करें👇</h2>
+</div>
+
+<div id="photo">
+  <img src="Happy Holi image background.jpg.jpg" onclick="play()" height="900px" width="100%">
+</div>
+<div id="bucket">
+  <img src="bucket.png" onclick="play()" width="190px">
+</div>
+
+<script>
+
+  let text1 = document.getElementById("bucket-text");
+  let bucket = document.getElementById("bucket");
+let image = document.getElementById("photo");
+image.addEventListener ( "click",()=>{
+  // image.style.display="none";
+bucket.style.display="none";
+
+text1.classList.add("photoAnimation1");
+  image.classList.add("photoAnimation1");
+  console.log("clicked");
+  setTimeout(()=>{
+   
+       image.style.display="none";
+       text1.style.display="none";
+    
+},1200)})
+
+bucket.addEventListener ( "click",()=>{
+  // image.style.display="none";
+bucket.style.display="none";
+
+  image.classList.add("photoAnimation1");
+  text1.classList.add("photoAnimation1");
+  console.log("clicked");
+  setTimeout(()=>{
+
+       image.style.display="none";
+       text1.style.display="none";
+},1200)})
+
+</script>  
+<script>
+ function play() {
+  var audio = document.getElementById("audio");
+  audio.play();
+
+
+  
+ }
+       </script>   
+       <script>
+      
+       </script>
+      
+
+
+<div class="happy-holi">
+  <img src="Happy Holi image.jpg" width="190px">
+</div>
+
+
+<div class="hindisahayatancontainer">
+    <h2 class="name-show"  id="hindisahayata-show-name">Deadon</h2>
+            <div class="font-effect-neon"><p class="fromMessage" id="hindisahayata-fromMessage"></p></div>
+      <marquee style="z-index:2;position:absolute;left:45px;top:350px;font-size:30px" scrollamount="2" direction="down"></marquee>
+      <marquee style="z-index:2;position:absolute;left:270px;top:350px;font-size:30px" scrollamount="2" direction="up"></marquee>
+      
+    <div>
+<div class="img-text">
+  <img src="Happy Holi image Text .jpg" width="190px"><br>
+  <img src="Happy Holi  CHILDimage.jpg" width="190px"><br>
+</div>
+<div class="ranggoli">
+  <img src="Happy Holi image rang .jpg"  width="180px">
+</div>
+
+        <script type="text/javascript">
+            atOptions = {
+                'key' : '042b4bc6318d1c4bf2ede7bf3241b642',
+                'format' : 'iframe',
+                'height' : 250,
+                'width' : 300,
+                'params' : {}
+            };
+            document.write('<scr' + 'ipt type="text/javascript"></scr' + 'ipt>');
+        </script>
+          
+        
+          <span style="font-size:22px;text-shadow: 1px 1px 3px #FFEB3B, 1px 1px 3px #FFEB3B, -1px -1px 3px #FFEB3B, -1px -1px 3px #FFEB3B;color:#E91E63;"><marquee><b><div id="mani"></div></b></marquee></span></center><br>
+        <div class="glow" id="manikant"></div>
+        <br>
+            
+        
+<div id="formBox" >
+    <input class="animated pulse infinite" type="text" name="name" id="nameTextBox"  placeholder="यहाँ अपना नाम लिखें">
+    <div class="animated pulse infinite" id="goButton" onclick="createGreeting()" >
+    👉देखें
+    </div>
+  </div>
+  <a class="footerbtn" href="javascript:void(0)" onclick="shareActionWA()">
+    <img width="35px" height="35px" src="https://bit.ly/2VLMnaW">
+    <b style="position:  relative;top: -3px;margin: 10px;">यहाँ से सबको भेजे</b>
+    <img width="35px" height="35px" src="https://bit.ly/2VLMnaW">
+  </a>
+
+  
+
+
+<script>
+var jqs = function(sParam) {
+  var sPageURL = window.location.search.substring(1);
+  var sURLVariables = sPageURL.split("&");
+  for (var i = 0; i < sURLVariables.length; i++) {
+      var sParameterName = sURLVariables[i].split("=");
+      if (sParameterName[0] === sParam) {
+        return sParameterName[1];
+      }
+    }
+};
+window.jqs = jqs;
+var name = decodeURI(jqs("bl"));
+if (typeof jqs("bl") === "undefined") {
+name = "";
+}
+var checkName = function() {
+if (name.length !== 0) {
+  name = name.replace(/-/g, " ");
+  console.log("name is there", name);
+  console.log(name);
+  
+  document.querySelector("#manikant").innerHTML = name;
+//   document.querySelector("#mani").innerHTML = name+" की तरफ से आपको और आपके परिवार को नववर्ष 2025 की हार्दिक शुभकामनायें !!";
+  document.querySelector("#hindisahayata-show-name").innerHTML = name;
+  document.querySelector("#hindisahayata-fromMessage").innerHTML= ""
+} else {
+
+}
+};
+
+checkName();
+
+var createGreeting=function(){
+
+// ga('send', {
+//   hitType: 'event',
+//   eventCategory: 'interaction',
+//   eventAction: 'click',
+//   eventLabel: 'goButtonClicked'
+// });
+
+gtag('event', 'click', {
+      'event_category': 'interaction',
+      'event_label': 'goButtonClicked',
+});
+
+sname=document.querySelector("#nameTextBox").value;
+sname=sname.replace(/@/g,"-")
+sname=sname.replace(/%40/g,"-")
+sname=sname.replace(/\./g,"-")
+if(sname.trim()!=""){
+  document.querySelector("#formBox").style.display = "none";
+  document.querySelector(".footerbtn").style.display = "block";
+  document.querySelector("#manikant").innerHTML = sname;
+//   document.querySelector("#mani").innerHTML = sname+" की तरफ से आपको और आपके परिवार को नववर्ष 2025 की हार्दिक शुभकामनायें !!";
+  document.querySelector("#hindisahayata-show-name").innerHTML = sname;
+  document.querySelector("#hindisahayata-fromMessage").innerHTML= ""
+  window.scrollTo(0,0);
+}else {
+  alert ("कृपया पहले अपना नाम टाइप करें");
+  document.getElementById("nameTextBox").focus();
+}
+}
+
+var shareActionWA = function() {
+gtag('event', 'click', {
+      'event_category': 'interaction',
+      'event_label': 'shareOnWhatsAppClicked',
+});
+
+var shareString = "";
+var whatsappHref;
+shareString += "*"+sname+"*";
+
+
+shareString +=" ने आपको wish किया है , यहां click करके देखें  (DeadonTeam) 👇"
+shareString +=(window.location.href.split("?")[0] + "?bl=" + sname).replace("#", "").replace(/ /g, "-");
+
+
+whatsappHref = "whatsapp://send?text=" + shareString;
+window.location.href = whatsappHref;
+
+};
+var countDownDate=new Date("01 January, 2025 00:00:00").getTime(),x=setInterval(function(){var e=(new Date).getTime(),o=countDownDate-e,t=Math.floor(o/864e5),n=Math.floor(o%864e5/36e5),a=Math.floor(o%36e5/6e4),l=Math.floor(o%6e4/1e3);document.getElementById("hindisahayata").innerHTML=t+"<font color='black'> दिन,</font> "+n+"<font color='black'> घंटे,</font> "+a+"<font color='black'>  मिनट,<br></font> "+l+"<font color='black'> सेकंड <spna style='color:red'>पहले</span> </font>",o<0&&(clearInterval(x),document.getElementById("hindisahayata").innerHTML="")},1e3);
+document.write(res);
+</script>        
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-191698403-1"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-191698403-1');
+</script>
+<div class="wishMessage" >
+  <div style="background-color: rgba(230, 6, 6, 0.89) ; border-radius: 17px;border: 0px solid rgb(0, 0, 0);box-shadow: rgba(0, 0, 0, 0.2) 5px 5px 5px;color: #fff;font-family: arial, sans-serif;font-size: 18px;font-stretch: normal;font-style: normal;font-variant: normal;line-height: normal;margin-top: 70px;padding: 4px 5px 3px;width: 82%;">
+    <b>
+      आप सभी को</b>
+  </div>
+  <div style="background-color: #ff6600;border-radius: 17px;border: 0px solid rgb(0, 0, 0);box-shadow: rgba(0, 0, 0, 0.2) 5px 5px 5px;color: #fff;font-family: arial, sans-serif;font-size: 18px;font-stretch: normal;font-style: normal;font-variant: normal;line-height: normal;margin: 5px auto;padding: 4px 5px 3px;width: 82%;">
+  <b>
+    इनके तरफ से और</b>
+  </div>
+ 
+  <div style="background-color: #ea00fff3;border-radius: 17px;border: 0px solid rgb(0, 0, 0);box-shadow: rgba(0, 0, 0, 0.2) 5px 5px 5px;color: #fff;font-family: arial, sans-serif;font-size: 18px;font-stretch: normal;font-style: normal;font-variant: normal;line-height: normal;margin: 5px auto;padding: 4px 5px 3px;width: 82%;">
+  <b>
+    Deadon  के तरफ से
+  </div></b>
+  <div style="background-color: #00ff15ec;border-radius: 17px;border: 0px solid rgb(0, 0, 0);box-shadow: rgba(0, 0, 0, 0.2) 5px 5px 5px;color: #fff;font-family: arial, sans-serif;font-size: 18px;font-stretch: normal;font-style: normal;font-variant: normal;line-height: normal;margin: 5px auto;padding: 4px 5px 3px;width: 82%;">
+<b>
+    Happy Holi</b>
+  </div>
+  <div style="background-color: #2A4979;border-radius: 17px;border: 0px solid rgb(0, 0, 0);box-shadow: rgba(0, 0, 0, 0.2) 5px 5px 5px;color: #fff;font-family: arial, sans-serif;font-size: 18px;font-stretch: normal;font-style: normal;font-variant: normal;line-height: normal;margin: 5px auto;padding: 4px 5px 3px;width: 82%;">
+    <marquee behavior="">
+      <b>
+      Devloped By Deadon</b></marquee>
+    </div><br>
+
+<div class="left-slider">
+  <marquee behavior="scoll" direction="up" scrolldelay="0" >
+    <img src="left-color.png" alt="" width="190px">
+    <br>
+    <img src="left-color.png" alt="" width="190px">
+    <br>
+    <img src="left-color.png" alt="" width="190px">
+    <br>
+    <img src="left-color.png" alt="" width="190px">
+    <br>
+    <img src="left-color.png" alt="" width="190px">
+    <br>
+    <img src="left-color.png" alt="" width="190px">
+    <br>
+    <img src="left-color.png" alt="" width="190px">
+    <br>
+    <img src="left-color.png" alt="" width="190px">
+    <br>
+    <img src="left-color.png" alt="" width="190px">
+    <br>
+    <img src="left-color.png" alt="" width="190px">
+    <br>
+
+  </marquee>
+
+  <div class="right-slider">
+    <marquee behavior="scoll" direction="down"scrolldelay="0" >
+      <img src="right-colo.png" alt="" width="190px">
+      <br>
+      <img src="right-colo.png" alt="" width="190px">
+      <br>
+      <img src="right-colo.png" alt="" width="190px">
+      <br>
+      <img src="right-colo.png" alt="" width="190px">
+      <br>
+      <img src="right-colo.png" alt="" width="190px">
+      <br>
+      <img src="right-colo.png" alt="" width="190px">
+      <br>
+      <img src="right-colo.png" alt="" width="190px">
+      <br>
+      <img src="right-colo.png" alt="" width="190px">
+      <br>
+      <img src="right-colo.png" alt="" width="190px">
+      <br>
+      <img src="right-colo.png" alt="" width="190px">
+      <br>
+</marquee>
+  </div>  
+</div></div>
+</div>
+  
+                                                                                                                                                                                                                                                                                                                                        
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
